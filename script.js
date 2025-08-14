@@ -107,4 +107,10 @@ store.addProduct(product4);
 store.addProduct(product5);
 
 console.log("");
-console.log("Total Inventory Value Before Discount: $" + store.getInventoryValue()); // displays value before discount
+console.log("Total Inventory Value Before Discount: $" + store.getInventoryValue().toFixed(2)); // displays value before discount
+
+//applies discount on inventory
+ProductProperties.applyDiscount(store.inventory, .15);
+
+console.log("");
+console.log("Total Inventory Value After Discount: $" + store.getInventoryValue().toFixed(2)); // displays value after discount
