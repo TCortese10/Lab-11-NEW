@@ -89,3 +89,10 @@ class Store {
         return null;
     }
 }
+
+// 5 new products created
+let product1 = new ProductProperties("Chicken", 33.99, 94);
+let product2 = new ProductProperties("Rice", 7.25, 126);
+let product3 = new ProductProperties("Pork", 27.50, 52);
+let product4 = new PerishableProductProperties("Onions", 67, 330);
+let product5 = new PerishableProductProperties("Cake", 55, 21);
