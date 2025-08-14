@@ -75,7 +75,7 @@ class Store {
     getInventoryValue() {
         let value = 0;
         for (let product of this.inventory) {
-            value += product.getTotalValue //runs through a loop and gets the total value of all items in inventory
+            value += product.getTotalValue() //runs through a loop and gets the total value of all items in inventory
         }
         return value;
     }
@@ -105,3 +105,6 @@ store.addProduct(product2);
 store.addProduct(product3);
 store.addProduct(product4);
 store.addProduct(product5);
+
+console.log("");
+console.log("Total Inventory Value Before Discount: $" + store.getInventoryValue()); // displays value before discount
