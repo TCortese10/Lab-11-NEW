@@ -96,3 +96,12 @@ let product2 = new ProductProperties("Rice", 7.25, 126);
 let product3 = new ProductProperties("Pork", 27.50, 52);
 let product4 = new PerishableProductProperties("Onions", 67, 330);
 let product5 = new PerishableProductProperties("Cake", 55, 21);
+
+//add products to the store object
+
+let store = new Store();
+store.addProduct(product1);
+store.addProduct(product2);
+store.addProduct(product3);
+store.addProduct(product4);
+store.addProduct(product5);
