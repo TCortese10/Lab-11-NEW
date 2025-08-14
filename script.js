@@ -114,3 +114,10 @@ ProductProperties.applyDiscount(store.inventory, .15);
 
 console.log("");
 console.log("Total Inventory Value After Discount: $" + store.getInventoryValue().toFixed(2)); // displays value after discount
+console.log("");
+
+// search product by name
+let findProduct = store.findProductByName("Chicken");
+if (findProduct) { // if the name matches anything in the store, it calls the string method and outputs information
+    findProduct.toString();
+}
