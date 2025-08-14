@@ -71,4 +71,12 @@ class Store {
     addProduct(product){
         this.inventory.push(product); //adds items to an array
     }
+
+    getInventoryValue() {
+        let value = 0;
+        for (let product of this.inventory) {
+            value += product.getTotalValue //runs through a loop and gets the total value of all items in inventory
+        }
+        return value;
+    }
 }
