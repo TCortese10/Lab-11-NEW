@@ -79,4 +79,13 @@ class Store {
         }
         return value;
     }
+
+    findProductByName(name) { // runs through inventory and looks for mathcing name. if not found null is returned
+        for (let product of this.inventory) {
+            if (product.name === name) {
+                return product;
+            }
+        }
+        return null;
+    }
 }
