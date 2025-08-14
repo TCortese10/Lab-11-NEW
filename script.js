@@ -63,6 +63,9 @@ item6.toString();
 
 // create a store inventory
 
-class store {
-    
+class Store {
+    constructor() {
+        this.inventory = []; //creating an inventory that will store items
+    }
+
 }
